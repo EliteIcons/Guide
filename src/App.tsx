@@ -81,6 +81,7 @@ export function App() {
         <nav className="nav">
           <a href="https://eliteicons.github.io">GALLERY ↗</a>
           <a href="https://eliteicons.github.io/Icon-Studio/">ICON STUDIO ↗</a>
+      <a href="https://eliteicons.github.io/Showcase/">SHOWCASE 🡕</a>
         </nav>
       </header>
 
