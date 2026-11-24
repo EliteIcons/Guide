@@ -75,12 +75,12 @@ export function App() {
         <div className="brand">
           <Sparkles size={20} color="#ccff00" />
           <h1>
-            ELITE<span>ICONS</span> // GUIDE
+            ELITE<span>ICONS</span> / GUIDE
           </h1>
         </div>
         <nav className="nav">
-          <a href="https://github.io">GALLERY ↗</a>
-          <a href="https://github.ioIcon-Studio/">ICON STUDIO ↗</a>
+          <a href="https://eliteicons.github.io">GALLERY ↗</a>
+          <a href="https://eliteicons.github.io/Icon-Studio/">ICON STUDIO ↗</a>
         </nav>
       </header>
 
