@@ -1,0 +1,250 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000000;
+  color: #ffffff;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.guide {
+  min-height: 100vh;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #070707;
+  border-bottom: 1px solid #222222;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.brand h1 {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+}
+
+.brand h1 span,
+.accent {
+  color: #ccff00;
+}
+
+.nav {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.nav a {
+  color: #aaaaaa;
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.nav a:hover {
+  color: #ccff00;
+}
+
+.content {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.hero-box {
+  border: 1px solid #222222;
+  background: radial-gradient(circle at top right, #141a00 0%, #050505 65%);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pill {
+  width: fit-content;
+  font-size: 0.7rem;
+  color: #ccff00;
+  border: 1px solid #3a4700;
+  background: #141a00;
+  padding: 0.25rem 0.6rem;
+}
+
+.hero-box h2 {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.hero-box p {
+  color: #aaaaaa;
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.section-head {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  border-bottom: 1px solid #222222;
+  padding-bottom: 0.6rem;
+}
+
+.section-head h3 {
+  font-size: 0.95rem;
+  color: #ffffff;
+}
+
+.desc {
+  font-size: 0.85rem;
+  color: #999999;
+  line-height: 1.6;
+}
+
+.desc code {
+  color: #ccff00;
+  background: #111111;
+  padding: 0.15rem 0.4rem;
+  border: 1px solid #262626;
+}
+
+/* Interactive Playground */
+.playground {
+  border: 1px solid #262626;
+  background: #070707;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 700px) {
+  .playground {
+    grid-template-columns: 1fr;
+  }
+}
+
+.live-stage {
+  min-height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border-right: 1px solid #222222;
+  background-image: radial-gradient(#222222 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+.sliders {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.sliders label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+  color: #aaaaaa;
+  gap: 1rem;
+}
+
+.sliders input[type='range'] {
+  accent-color: #ccff00;
+  width: 140px;
+}
+
+.sliders input[type='color'] {
+  width: 48px;
+  height: 28px;
+  border: 1px solid #444444;
+  background: none;
+  cursor: pointer;
+}
+
+/* Code Blocks */
+.code-wrap {
+  position: relative;
+  border: 1px solid #222222;
+  background: #050505;
+}
+
+.code-wrap pre {
+  padding: 1.15rem;
+  font-size: 0.8rem;
+  color: #d4d4d4;
+  overflow-x: auto;
+  line-height: 1.55;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 0.65rem;
+  right: 0.65rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: #141414;
+  border: 1px solid #333333;
+  color: #ccff00;
+  font-family: inherit;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+}
+
+.copy-btn:hover {
+  background: #ccff00;
+  color: #000000;
+}
+
+/* Props Table */
+.props-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+}
+
+.props-table th,
+.props-table td {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border: 1px solid #222222;
+}
+
+.props-table th {
+  background: #0d0d0d;
+  color: #ccff00;
+  font-size: 0.72rem;
+}
+
+.props-table td code {
+  color: #ccff00;
+}
